@@ -20,9 +20,9 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
         bottomNavigationBar: Container(
           color: mainColor,
-          height: 60,
+          height: 70,
           child: Padding(
-            padding: EdgeInsets.all(5),
+            padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -54,6 +54,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
                 ),
+                const SizedBox(width: 5),
                 Expanded(
                     child: GestureDetector(
                         onTap: () {
